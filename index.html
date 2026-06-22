@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenkins Demo Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      margin-top: 60px;
+    }
+
+    .card {
+      background: white;
+      width: 400px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    #message {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jenkins CI/CD Demo</h1>
+    <p>Simple Website Deployment</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Hello from Jenkins 🚀</h2>
+      <p>This website is deployed using Jenkins pipeline.</p>
+
+      <button onclick="showMessage()">
+        Click Me
+      </button>
+
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Jenkins Demo Website
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML =
+        "Build Successful! 🎉";
+    }
+  </script>
+
+</body>
+</html>
